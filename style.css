@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "boston";
+  src: url("https://cdn.glitch.global/e89def7a-2d41-428b-9a55-38efad5195a0/BOSTON%20CAPS.ttf?v=1699662597334")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #222222;
+  background-color: whitesmoke;
+  line-height: 1.4;
+  font-size: 16pt;
+  font-family: "spectral", serif;
+  display: block;
+}
+
+body {
+  width: 100vw;
+}
+
+/*
+main {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: #222222;
+  color: whitesmoke;
+  width: 100%;
+  height: 75px;
+  text-transform: uppercase;
+  font-family: "teko", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  padding: 10px 20px;
+  width: 100vw;
+  z-index: 100;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: inline;
+  padding: 0 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  float: left;
+  font-family: "boston", serif;
+  font-size: 3em;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.banner {
+  background-image: linear-gradient( to top, rgba(160, 160, 160, 0.75), rgba(160, 160, 160, 0.2)), url("https://cdn.glitch.global/e89def7a-2d41-428b-9a55-38efad5195a0/Richard-Pare.jpeg?v=1699655976689");
+  background-size: cover;
+  position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  display: flex;
+  font-family: "boston", serif;
+  font-size: 10em;
+  height: 100vh;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: center;
+  color: whitesmoke;
+  padding: 0 10px;
+}
+
+h2 {
+  font-family: "teko", sans-serif;
+  text-transform: uppercase;
+  margin: 50px 20px 50px 20px;
+  font-size: 3em;
+}
+
+.sub {
+  font-family: "teko", sans-serif;
+  font-size: 1.5em;
+  padding: 0 30px;
+  
+}
+
+.text {
+  padding: 10px 0;
+}
+
+.pt1 {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: row;
+  padding: 0 30px;
+}
+
+.img1 {
+  background-image: url("https://cdn.glitch.global/e89def7a-2d41-428b-9a55-38efad5195a0/St.Petersburg_Russia_ugly_building.jpg?v=1699900031007");
+  background-size: cover;
+  position: center;
+  /*height: auto;*/
+  float: right;
+  width: 30%;
+  height: 500px;
+  
+}
+
+.textbox1 {
+  width: 500px;
+  padding: 10px;
+}
+
+.pt2 {
+  align-self: center;
+  padding: 30px 30px;
+  width: 80vw;
+}
+
+.pt3 {
+  /*
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  */
+  display: flex;
+}
+
+.img2 {
+  background-image: url("https://cdn.glitch.global/e89def7a-2d41-428b-9a55-38efad5195a0/MRC_F_02-1024x930.jpeg?v=1699655982104");
+  background-size: cover;
+  position: center;
+  height: auto;
+  float: right;
+  width: 50%;
+  height: 550px;
+}
+
+.quote {
+  font-family: "boston", serif;
+  font-size: 5em;
+  line-height: .8;
+  padding: 10px;
+}
+
+.creds {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+}
+
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "teko", sans-serif;
+}
+
+a:hover {
+  color: orangered;
+}
+
+a:active {
+  color: grey;
+}
+
+.footlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  color: grey;
+  font-size: .65rem
+}
+
+.footsub {
+  color: whitesmoke;
+  font-family: "teko", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.imgref {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 480px){
+  header {
+    max-width: 100vw;
+  }
+  
+  .logo {
+    font-size: 2em;
+  }
+  
+  a:hover {
+    color: whitesmoke;
+  }
+  
+  a:active {
+    color: orangered;
+  }
+  
+ .banner p {
+    font-size: 30vw;
+  }
+  
+  .title {
+    width: 98vw;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 12vw;
+  }
+  
+  .text {
+    max-width: 70vw;
+  }
+  
+  .pt1 {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+  
+  .textbox1 {
+    width: 80vw;
+  }
+  
+  .img1 {
+    width: 80%;
+    height: 300px;
+    z-index: -2;
+    justify-content: center;
+  }
+  
+  .pt2 {
+    padding: 50px 30px;
+    width: 100vw;
+  }
+  
+  .quote {
+    font-size: 10vw;
+  }
+  
+}
